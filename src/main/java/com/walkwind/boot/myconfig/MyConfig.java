@@ -29,11 +29,11 @@ public class MyConfig extends WebMvcConfigurerAdapter{
                 registry.addViewController("/index.html").setViewName("login");
                 registry.addViewController("/main.html").setViewName("dashboard");
             }
-            @Override
+          /*  @Override
             public void addInterceptors(InterceptorRegistry registry) {
                 registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").
                         excludePathPatterns("/","/user/login","/index.html","/webjars/**", "/asserts/**");
-            }
+            }*/
         };
         return webMvcConfigurerAdapter;
     }

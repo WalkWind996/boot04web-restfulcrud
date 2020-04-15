@@ -1,7 +1,9 @@
 package com.walkwind.boot.controller;
 
+import com.walkwind.boot.exception.UserNotExistException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,7 +25,10 @@ public class HelloController {
 
     @ResponseBody
     @RequestMapping("/hello")
-    public String hello(){
+    public String hello(@RequestParam("user") String username){
+        if ("aaa".equals(username)) {
+            throw new UserNotExistException();
+        }
         return "hello";
     }
 
