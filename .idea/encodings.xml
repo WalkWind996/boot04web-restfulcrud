@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/springboot04-08(Web,整合mybatis,自定义starter,springboot原理)开发.docx" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>
